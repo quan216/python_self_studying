@@ -10,17 +10,22 @@ print(a)
 #Excercie 3
 
 while True:
-    input = input("your number, or q to quit game: ")
-    if input == "q":
+    
+    bet_1 = input("your number, or q to quit game: ")
+
+    if bet_1 == "q":
             print("quit game!")
             break
     try:
-        input = int(input)
+        bet_1 = int(bet_1)
     except ValueError:
-        print("please type a number or q to quit.")
+        print("your input must be number or q to quit game")
+        continue
 
-        if input in range(25,50):
+    if bet_1 in range (25,50):
             print("you win! congrast!")
-        else:
-            print("again")
+            break
+    else:
+            print("you lose! sorry!")
+    
 

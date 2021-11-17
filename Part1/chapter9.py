@@ -1,0 +1,1 @@
+#bat dau code voi file

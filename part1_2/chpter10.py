@@ -3,6 +3,7 @@
 
 import random
 import string
+import time
 
 random_word = random.sample(string.ascii_lowercase, 3)
 machine_word = "".join(random_word)
@@ -46,6 +47,7 @@ def hangerman(word):            # word la bien cua ham, sau nay khi goi
             board[cbin] = char      # thay the ki tu "_" bang "char" tai vi tri trung vs word
             rletter[cbin] = "$"  
             print(board)         # doi ki tu tai vi tri (char) cuar rletter thanh "$" de vong lap sau khong lap lai      
+            
         else:
             wrong += 1
             time =  len(picture)-wrong

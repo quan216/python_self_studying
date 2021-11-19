@@ -37,8 +37,6 @@ print("                          ")
 print(f'{list10_split[0]}\n{list10_split[1]}')
 
 
-end
-
 
 
 

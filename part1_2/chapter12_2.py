@@ -15,7 +15,8 @@ class Triangle:
         self.dimension1 = d1
         self.dimension2 = d2
         self.dimension3 = d3
-        self.S = (self.dimension1 + self.dimension2 + self.dimension3)/2
+        self.S = (self.dimension1 + self.dimension2\
+                    + self.dimension3)/2
 
     def area_cal(self):
         return math.sqrt(self.S*(self.S- self.dimension1)*\
@@ -36,14 +37,3 @@ if abs(b-c) < a and a < a+b :
     print(t_triangle.area_cal())
 else: 
     print("these dimensions are not become a triangle ")
-
-
-
-
-
-
-
-
-    
-
-
